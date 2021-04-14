@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/air_pollution?lat=40.7351&lon=73.9945&appid=08737b902409facd0a89efb98dcd6981',
+        url: 'https://api.openweathermap.org/data/2.5/air_pollution?lat=40.7351&lon=73.9945&appid=08737b902409facd0a89efb98dcd6981',
         dataType: 'jsonp',
         success: function(results){
             aqi = results.list[0].main.aqi;
